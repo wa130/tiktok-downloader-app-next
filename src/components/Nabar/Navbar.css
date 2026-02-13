@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  --blue-color-primary: rgb(100, 100, 260);
+  --background-nav: rgb(10, 10, 10);
+  --color-text: white;
+}
+
+.navbar {
+  background: var(--background-nav);
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 5rem;
+  color: var(--color-text);
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.logo span {
+  color: var(--blue-color-primary);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 48px;
+  font-weight: 550;
+  cursor: pointer;
+  color: white;
+}
+
+a:hover {
+  color: var(--blue-color-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-text);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+  transition: 0.2s;
+}
+
+.mobile-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  right: 0;
+  padding: 20px;
+  background: var(--background-nav);
+  width: 100%;
+  max-width: 300px;
+  border-top: 1px solid var(--blue-color-primary);
+}
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .mobile-menu {
+    width: 100%;
+    max-width: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
