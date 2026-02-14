@@ -1,7 +1,9 @@
 import {
-    Menu
+    Menu,
+    ClipboardList
 } from 'lucide-react'
 
 export const Icons = {
-    hamburger: Menu
+    hamburger: Menu,
+    papanKlip: ClipboardList
 }
