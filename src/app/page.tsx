@@ -1,12 +1,10 @@
 'use client'
 
-import './globals.css'
-import Navbar from '@/components/Nabar/Navbar'
+import Hero from '@/components/Hero/Hero'
 
 export default function Home() {
   return (
     <>
-    <Navbar />
     </>
   )
 }
