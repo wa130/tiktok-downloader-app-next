@@ -62,8 +62,29 @@ form {
   font-size: 32px;
 }
 
-.container-form span {
+.hero-header {
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-header h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0 0 16px 0;
+}
+
+.hero-header span {
   color: var(--blue-color-primary);
+}
+
+.hero-subtitle {
+  color: #9ca3af;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
 }
 
 .forming {

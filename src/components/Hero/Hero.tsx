@@ -6,9 +6,18 @@ import { Icons } from '@/lib/Icons'
 export default function Hero() {
   const [link, setLink] = useState("");
 
-  function sendApi(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
+  function sendApi() {
     alert(link);
+  }
+
+  function paste() {
+    const text = navigator.clipboard.readText().then((text) => {
+      if (text.startsWith("https://tiktok.com")) {
+        setLink(text);
+      } else {
+        alert("maaf yang kamu tempel bukan link");
+      }
+    })
   }
   return (
     <div className="hero">
@@ -16,7 +25,7 @@ export default function Hero() {
         <h2>
           <span>Sman</span>Tik
         </h2>
-        <form onSubmit={sendApi}>
+        <form>
           <div className="forming">
             <input
               type="text"
@@ -25,9 +34,9 @@ export default function Hero() {
               onChange={(e) =>
              setLink(e.target.value)}
             />
-            <button><Icons.papanKlip />Tempel</button>
+            <button onClick={() => {paste()}}><Icons.papanKlip />Tempel</button>
           </div>
-          <button type="submit" className="unduh">
+          <button type="submit" onClick={sendApi} className="unduh">
             Unduh
           </button>
         </form>
