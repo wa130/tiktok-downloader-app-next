@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  --blue-color-primary: rgb(100, 100, 260);
+  --gradient-color: linear-gradient(40deg, rgb(100, 100, 260), rgb(47, 0, 255));
+}
+
+.container-alert {
+    position: absolute;
+    z-index: 997;
+    width: 70%;
+    margin-top: -78px;
+}
+
+.alert {
+    background: rgb(0, 0, 0);
+    padding: 40px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: cente    r;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.alert h2 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 919;
+    font-size: 32px;
+}
+
+
+.alert span {
+    color: var(--blue-color-primary);
+}
+
+.video {
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+.unduh {
+    width: 50%;
+    height: 32px;
+}
